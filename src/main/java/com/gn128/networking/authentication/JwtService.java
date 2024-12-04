@@ -6,6 +6,7 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+import org.springframework.stereotype.Component;
 
 import java.security.Key;
 import java.util.Date;
@@ -20,6 +21,7 @@ import java.util.function.Function;
  * Created_at - 20:27
  */
 
+@Component
 public class JwtService {
 
     private static final String KEY = "645267556B58703273357638792F423F4528482B4D6251655368566D59713374";
